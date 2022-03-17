@@ -1,0 +1,37 @@
+// $primary-color: #b95266;
+$primary-color: #ff452b;
+// $primary-color: #e89085;
+$color-black-text: #263238;
+$color-gray-text: #616161;
+
+$size-xs-max-width: 575px;
+$size-sm-min-width: 576px;
+$size-sm-max-width: 767px;
+$size-md-min-width: 768px;
+$size-md-max-width: 991px;
+$size-lg-min-width: 992px;
+$size-lg-max-width: 1119px;
+$size-xl-min-width: 1200px;
+$size-xl-min-width: 1599px;
+$size-xxl-min-width: 1600px;
+
+.noselect {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.color-white {
+  color: white !important;
+}
+
+.color_black {
+  color: black !important;
+}
+
+.m-0 {
+  margin: 0 !important;
+}
