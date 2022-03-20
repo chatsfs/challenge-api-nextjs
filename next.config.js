@@ -7,5 +7,4 @@ module.exports = {
   images: {
     domains: ["flagcdn.com", "upload.wikimedia.org"],
   },
-  distDir: "out",
 };
