@@ -1,0 +1,13 @@
+.row {
+  margin-bottom: 1rem;
+  .col {
+    text-align: center;
+    .divider {
+      margin: auto;
+      display: block;
+      width: 18.75rem;
+      height: 0.0625rem;
+      background-color: #e4e1e1;
+    }
+  }
+}

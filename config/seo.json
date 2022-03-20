@@ -1,0 +1,17 @@
+{
+  "title": "Hygge Nails | Belleza a domicilio",
+  "titleTemplate": "%s",
+  "canonical": "https://www.hyggenails.com",
+  "description": "Hygge Nails - A domicilio. El equipo Hygge te acerca tus experiencias de belleza, salud y relajación favoritas, donde te encuentres: domicilio, oficina, etc.",
+  "openGraph": {
+    "type": "website",
+    "locale": "es_PE",
+    "url": "https://hyggenails.com/",
+    "site_name": "Hygge Nails"
+  },
+  "twitter": {
+    "handle": "@nextjs",
+    "site": "@nextjs",
+    "cardType": "summary_large_image"
+  }
+}

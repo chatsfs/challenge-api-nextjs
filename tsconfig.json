@@ -16,6 +16,7 @@
     "jsx": "preserve",
     "paths": {
       "@common/*": ["common/*"],
+      "@context/*": ["context/*"],
       "@assets/*": ["assets/*"],
       "@components/*": ["components/*"],
       "@config/*": ["config/*"],

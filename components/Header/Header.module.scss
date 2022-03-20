@@ -1,0 +1,223 @@
+@import '../../assets/css/styles.scss';
+.header {
+  color: black;
+  background: transparent;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  transition: 0.2s;
+  padding: 1.25rem 0;
+  display: flex;
+  justify-content: space-between;
+  z-index: 10;
+  @media screen and (min-width: 0px) and (max-width: 47.9375rem) {
+    padding: 0.3125rem 0;
+  }
+}
+
+.header_row {
+  width: 100%;
+}
+
+.header_shadow {
+  background-color: white;
+}
+
+// LOGO
+.logo_container {
+  transform: translateX(1rem);
+  display: inline-block;
+  vertical-align: middle;
+  cursor: pointer;
+}
+
+.logo_img {
+  max-height: 1.875rem;
+  height: 1.875rem;
+  display: inline-block;
+  vertical-align: middle;
+
+  @media screen and (min-width: 0px) and (max-width: $size-md-min-width) {
+    content: url('/logo-small.png') !important;
+    max-height: 1.5rem;
+    height: 1.5rem;
+  }
+}
+
+// SEARCH
+.col_search_container {
+  text-align: center;
+  .search_container {
+    line-height: 2.5rem;
+    vertical-align: middle;
+    position: relative;
+    width: 100%;
+    max-width: 21.875rem;
+    margin-left: auto;
+    margin-right: auto;
+    transition: 0.2s;
+    border-radius: 1.25rem;
+    border: 0.0625rem solid black;
+    z-index: 10;
+
+    &:focus-within {
+      background: white;
+      box-shadow: 0px 0.125px 0.25rem rgba(0, 0, 0, 0.18) !important;
+      @media (min-width: 0px) and (max-width: $size-md-min-width) {
+        background: white;
+        width: 68vw;
+        input {
+          width: 68vw;
+          text-align: left;
+        }
+      }
+    }
+
+    &:hover {
+      box-shadow: 0px 0.125px 0.25rem rgba(0, 0, 0, 0.18) !important;
+
+      @media (min-width: 0px) and (max-width: $size-md-min-width) {
+        background: white;
+        width: 68vw;
+        input {
+          width: 68vw;
+          text-align: left;
+        }
+      }
+    }
+  }
+}
+
+.search_input {
+  background: transparent;
+  text-align: center;
+  border-radius: 1.25rem;
+  padding: 0.625rem;
+  border: none;
+  height: 2.375rem;
+  width: 100%;
+  max-width: 21.875rem;
+  outline: none;
+  display: inline-block;
+  vertical-align: middle;
+  z-index: 11;
+  font-size: 0.8rem;
+  cursor: pointer;
+  &::placeholder {
+    color: black;
+  }
+}
+
+.search_input_btn {
+  position: absolute;
+  cursor: pointer;
+  background: black;
+  border-radius: 50%;
+  height: 1.875rem;
+  width: 1.875rem;
+  right: 0.625rem;
+  top: calc(50% - 0.875rem);
+  > img {
+    height: 1rem;
+    border: none;
+    z-index: 12;
+    cursor: pointer;
+    outline: none;
+    transform: translate(0, -0.4375rem);
+  }
+  @media screen and (min-width: 0px) and (max-width: $size-md-min-width) {
+    transform: translateX(0.1875rem);
+  }
+}
+
+// OPTIONS
+.options_container {
+  line-height: 1.875rem;
+  transform: translateX(-1.5rem);
+  display: flex;
+  float: right;
+
+  a {
+    align-self: center;
+  }
+  img {
+    height: 2.125rem;
+    cursor: pointer;
+    display: inline-block;
+
+    @media screen and (min-width: 0px) and (max-width: $size-md-min-width) {
+      height: 1.5rem !important;
+    }
+  }
+}
+
+.options_zone_link {
+  margin: 0;
+  margin-top: 0.625rem;
+  margin-right: 2.5rem;
+  font-size: 1.1rem;
+  font-weight: 400;
+  cursor: pointer;
+  align-self: center;
+  @media screen and (min-width: 0px) and (max-width: $size-md-min-width) {
+    margin-right: 1rem;
+  }
+  @media screen and (min-width: 0px) and (max-width: $size-sm-min-width) {
+    font-size: 0.8rem !important;
+    margin-top: 0;
+    transform: translateY(1px) !important;
+  }
+}
+
+.options_cart {
+  height: 2.125rem;
+}
+
+.options_cart_img {
+  margin-right: 1rem;
+}
+
+.options_customer_link {
+  height: 3.125rem;
+}
+
+.options_unlogged_container {
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  border: none;
+  text-align: center;
+  position: relative;
+}
+
+.options_unlogged_logo {
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  position: absolute;
+  margin: auto;
+  height: 1.75rem;
+}
+
+.options_customer_container {
+  width: 2.25rem;
+  height: 2.25rem;
+  margin: 0;
+  border: 0.125rem solid $primary-color;
+  padding: 0.25rem;
+  border-radius: 50%;
+  font-size: 1rem;
+  text-align: center;
+  display: inline-block;
+  vertical-align: middle;
+  cursor: pointer;
+  position: relative;
+  p {
+    font-weight: bold;
+    transform: translateY(-0.1875rem);
+  }
+  @media screen and (min-width: 0px) and (max-width: $size-xs-max-width) {
+    transform: translateX(0.625rem);
+  }
+}
